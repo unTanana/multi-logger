@@ -51,7 +51,7 @@ const getLogText = (text: string, language: string) => {
     case "dart":
       return `print('${text}: $${text}');`;
     case "go":
-      return `fmt.Printf("${text}: %+v\n", ${text})`;
+      return `fmt.Printf("${text}: %+v\\n", ${text})`;
     default:
       return `console.log("${text}: ", ${text});`;
   }
@@ -68,7 +68,7 @@ const getErrorText = (text: string, language: string) => {
     case "dart":
       return `print('error - ${text}: $${text}');`;
     case "go":
-      return `fmt.Printf("${text}: %+v\n", ${text})`;
+      return `fmt.Printf("${text}: %+v\\n", ${text})`;
     default:
       return `console.error("${text}: ", ${text});`;
   }
