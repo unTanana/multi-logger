@@ -42,6 +42,10 @@ Initial release of "multi-logger"
 - Use "" for log quotes
 - Fix go logs
 
+### 0.0.3
+
+- Fix go logs not just for errors
+
 ---
 
 - **Enjoy!**

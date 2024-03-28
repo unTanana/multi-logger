@@ -43,17 +43,17 @@ const getSelectedText = () => {
 const getLogText = (text: string, language: string) => {
   switch (language) {
     case "javascript":
-      return `console.log('${text}: ', ${text});`;
+      return `console.log("${text}: ", ${text});`;
     case "typescript":
-      return `console.log('${text}: ', ${text});`;
+      return `console.log("${text}: ", ${text});`;
     case "python":
-      return `print('${text}: ', ${text})`;
+      return `print("${text}: ", ${text})`;
     case "dart":
-      return `print('${text}: ', ${text})`;
+      return `print("${text}: ", ${text})`;
     case "go":
-      return `fmt.Println('${text}: ', ${text})`;
+      return `fmt.Println("${text}: %+v", ${text})`;
     default:
-      return `console.log('${text}: ', ${text});`;
+      return `console.log("${text}: ", ${text});`;
   }
 };
 
