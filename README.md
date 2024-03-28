@@ -33,9 +33,14 @@ Unknown
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 Initial release of "multi-logger"
+
+### 0.0.2
+
+- Use "" for log quotes
+- Fix go logs
 
 ---
 

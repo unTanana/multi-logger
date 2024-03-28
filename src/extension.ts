@@ -60,17 +60,17 @@ const getLogText = (text: string, language: string) => {
 const getErrorText = (text: string, language: string) => {
   switch (language) {
     case "javascript":
-      return `console.error('${text}: ', ${text});`;
+      return `console.error("${text}: ", ${text});`;
     case "typescript":
-      return `console.error('${text}: ', ${text});`;
+      return `console.error("${text}: ", ${text});`;
     case "python":
-      return `print('error - ${text}: ', ${text})`;
+      return `print("error - ${text}: ", ${text})`;
     case "dart":
-      return `print('error - ${text}: ', ${text})`;
+      return `print("error - ${text}: ", ${text})`;
     case "go":
-      return `fmt.Println('${text}: ', ${text})`;
+      return `fmt.Println("${text}: %+v", ${text})`;
     default:
-      return `console.error('${text}: ', ${text});`;
+      return `console.error("${text}: ", ${text});`;
   }
 };
 
