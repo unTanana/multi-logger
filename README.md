@@ -46,6 +46,11 @@ Initial release of "multi-logger"
 
 - Fix go logs not just for errors
 
+### 0.0.4
+
+- use fmt.Printf in go logs
+- update dart logs
+
 ---
 
 - **Enjoy!**

@@ -49,9 +49,9 @@ const getLogText = (text: string, language: string) => {
     case "python":
       return `print("${text}: ", ${text})`;
     case "dart":
-      return `print("${text}: ", ${text})`;
+      return `print('${text}: $${text}');`;
     case "go":
-      return `fmt.Println("${text}: %+v", ${text})`;
+      return `fmt.Printf("${text}: %+v\n", ${text})`;
     default:
       return `console.log("${text}: ", ${text});`;
   }
@@ -66,9 +66,9 @@ const getErrorText = (text: string, language: string) => {
     case "python":
       return `print("error - ${text}: ", ${text})`;
     case "dart":
-      return `print("error - ${text}: ", ${text})`;
+      return `print('error - ${text}: $${text}');`;
     case "go":
-      return `fmt.Println("${text}: %+v", ${text})`;
+      return `fmt.Printf("${text}: %+v\n", ${text})`;
     default:
       return `console.error("${text}: ", ${text});`;
   }
