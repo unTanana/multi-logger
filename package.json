@@ -3,7 +3,7 @@
   "displayName": "multi-logger",
   "description": "Easy logging for multiple languages",
   "publisher": "unTanana",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.87.0"
   },

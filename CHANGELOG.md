@@ -27,3 +27,7 @@ All notable changes to the "multi-logger" extension will be documented in this f
 ### 0.0.6
 
 - added rust logging support
+
+### 0.0.7
+
+- added mojo logging support

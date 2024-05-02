@@ -48,6 +48,8 @@ const getLogText = (text: string, language: string) => {
       return `console.log("${text}: ", ${text});`;
     case "python":
       return `print("${text}: ", ${text})`;
+    case "mojo":
+      return `print("${text}: ", ${text})`;
     case "dart":
       return `print('${text}: $${text}');`;
     case "go":
@@ -66,6 +68,8 @@ const getErrorText = (text: string, language: string) => {
     case "typescript":
       return `console.error("${text}: ", ${text});`;
     case "python":
+      return `print("error - ${text}: ", ${text})`;
+    case "mojo":
       return `print("error - ${text}: ", ${text})`;
     case "dart":
       return `print('error - ${text}: $${text}');`;
