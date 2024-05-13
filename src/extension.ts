@@ -56,8 +56,10 @@ const getLogText = (text: string, language: string) => {
       return `fmt.Printf("${text}: %+v\\n", ${text})`;
     case "rust":
       return `println!("${text}: {:?}", ${text});`;
+    case "elixir":
+      return `IO.puts("${text}: #{${text}}")`;
     default:
-      return `console.log("${text}: ", ${text});`;
+      return `console.log("${language} - ${text}: ", ${text});`;
   }
 };
 
@@ -77,8 +79,10 @@ const getErrorText = (text: string, language: string) => {
       return `fmt.Printf("${text}: %+v\\n", ${text})`;
     case "rust":
       return `eprintln!("${text}: {:?}", ${text});`;
+    case "elixir":
+      return `IO.puts("error - ${text}: #{${text}}")`;
     default:
-      return `console.error("${text}: ", ${text});`;
+      return `console.error("${language} - ${text}: ", ${text});`;
   }
 };
 

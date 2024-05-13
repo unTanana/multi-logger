@@ -31,3 +31,7 @@ All notable changes to the "multi-logger" extension will be documented in this f
 ### 0.0.7
 
 - added mojo logging support
+
+### 0.0.8
+
+- added elixir logging support
