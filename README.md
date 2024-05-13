@@ -1,6 +1,7 @@
 # multi-logger README
 
-Very simple logging utility, used to handle logging variables and errors in multiple languages (go, python, javascript, dart)
+Very simple logging utility, used to handle logging variables and errors in multiple languages:
+go, python, javascript, typescript, dart, rust, elixir, mojo
 
 ## Features
 

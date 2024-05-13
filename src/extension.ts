@@ -57,9 +57,9 @@ const getLogText = (text: string, language: string) => {
     case "rust":
       return `println!("${text}: {:?}", ${text});`;
     case "elixir":
-      return `IO.puts("${text}: #{${text}}")`;
+      return `IO.puts("${text}: #{inspect(${text})}")`;
     default:
-      return `console.log("${language} - ${text}: ", ${text});`;
+      return `${language} not yet supported`;
   }
 };
 
@@ -80,9 +80,9 @@ const getErrorText = (text: string, language: string) => {
     case "rust":
       return `eprintln!("${text}: {:?}", ${text});`;
     case "elixir":
-      return `IO.puts("error - ${text}: #{${text}}")`;
+      return `IO.puts("error - ${text}: #{inspect(${text})}")`;
     default:
-      return `console.error("${language} - ${text}: ", ${text});`;
+      return `${language} not yet supported`;
   }
 };
 

@@ -35,3 +35,8 @@ All notable changes to the "multi-logger" extension will be documented in this f
 ### 0.0.8
 
 - added elixir logging support
+
+### 0.0.9
+
+- elixir: use inspect to print variables
+- show error message when language is not supported
