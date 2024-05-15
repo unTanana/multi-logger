@@ -40,3 +40,7 @@ All notable changes to the "multi-logger" extension will be documented in this f
 
 - elixir: use inspect to print variables
 - show error message when language is not supported
+
+### 0.1.0
+
+- elixir: use inspect function with label
