@@ -51,7 +51,7 @@ const getLogText = (text: string, language: string) => {
     case "mojo":
       return `print("${text}: ", ${text})`;
     case "dart":
-      return `print('${text}: $${text}');`;
+      return `log('${text}: $${text}');`;
     case "go":
       return `fmt.Printf("${text}: %+v\\n", ${text})`;
     case "rust":
@@ -74,7 +74,7 @@ const getErrorText = (text: string, language: string) => {
     case "mojo":
       return `print("error - ${text}: ", ${text})`;
     case "dart":
-      return `print('error - ${text}: $${text}');`;
+      return `log('error - ${text}: $${text}');`;
     case "go":
       return `fmt.Printf("${text}: %+v\\n", ${text})`;
     case "rust":

@@ -44,3 +44,7 @@ All notable changes to the "multi-logger" extension will be documented in this f
 ### 0.1.0
 
 - elixir: use inspect function with label
+
+### 0.1.1
+
+- use log for dart logs
