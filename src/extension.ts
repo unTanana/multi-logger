@@ -43,11 +43,10 @@ const getSelectedText = () => {
 const getLogText = (text: string, language: string) => {
   switch (language) {
     case "javascript":
-      return `console.log("${text}: ", ${text});`;
     case "typescript":
+    case "typescriptreact":
       return `console.log("${text}: ", ${text});`;
     case "python":
-      return `print("${text}: ", ${text})`;
     case "mojo":
       return `print("${text}: ", ${text})`;
     case "dart":
@@ -58,6 +57,8 @@ const getLogText = (text: string, language: string) => {
       return `println!("${text}: {:?}", ${text});`;
     case "elixir":
       return `IO.inspect(${text}, label: "${text}")`;
+    case "php":
+      return `dd(${text});`;
     default:
       return `${language} not yet supported`;
   }
@@ -66,11 +67,10 @@ const getLogText = (text: string, language: string) => {
 const getErrorText = (text: string, language: string) => {
   switch (language) {
     case "javascript":
-      return `console.error("${text}: ", ${text});`;
     case "typescript":
+    case "typescriptreact":
       return `console.error("${text}: ", ${text});`;
     case "python":
-      return `print("error - ${text}: ", ${text})`;
     case "mojo":
       return `print("error - ${text}: ", ${text})`;
     case "dart":
@@ -81,6 +81,8 @@ const getErrorText = (text: string, language: string) => {
       return `eprintln!("${text}: {:?}", ${text});`;
     case "elixir":
       return `IO.inspect(${text}, label: "ERROR - ${text}")`;
+    case "php":
+      return `dd("ERROR", ${text});`;
     default:
       return `${language} not yet supported`;
   }
