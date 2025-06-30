@@ -53,3 +53,7 @@ All notable changes to the "multi-logger" extension will be documented in this f
 
 - Added support for TypeScript React
 - Added PHP support using dd() for both logging and error logging
+
+### 0.1.3
+
+- dart uses print instead of log
